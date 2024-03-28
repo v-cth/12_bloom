@@ -6,7 +6,7 @@ from typing import Union
 
 
 class Excursion(BaseModel):
-    id: int | None = None
+    id: Union[int , None] = None
     vessel_id: int
     departure_port_id: Union[int, None] = None
     departure_at: Union[datetime, None] = None
